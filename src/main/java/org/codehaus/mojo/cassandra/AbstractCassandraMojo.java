@@ -463,8 +463,8 @@ public abstract class AbstractCassandraMojo
         config.append( "data_file_directories:\n" ).append( "    - " ).append( data.getAbsolutePath() ).append( "\n" );
         config.append( "commitlog_directory: " ).append( commitlog ).append( "\n" );
         config.append( "saved_caches_directory: " ).append( savedCaches ).append( "\n" );
-        config.append( "initial_token: " ).append(
-            initialToken == null || "null".equals( initialToken ) ? "" : initialToken.toString() ).append( "\n" );
+        //config.append( "initial_token: " ).append(
+            //initialToken == null || "null".equals( initialToken ) ? "" : initialToken.toString() ).append( "\n" );
         config.append( "listen_address: " ).append( listenAddress ).append( "\n" );
         config.append( "storage_port: " ).append( storagePort ).append( "\n" );
         config.append( "rpc_address: " ).append( rpcAddress ).append( "\n" );
