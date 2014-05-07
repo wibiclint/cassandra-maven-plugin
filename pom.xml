@@ -29,7 +29,7 @@ under the License.
     <relativePath />
   </parent>
 
-  <artifactId>cassandra-maven-plugin</artifactId>
+  <artifactId>cassandra-maven-plugin-fork</artifactId>
   <version>2.0.0-1</version>
   <packaging>maven-plugin</packaging>
 
@@ -92,6 +92,8 @@ under the License.
     <mavenVersion>2.2.1</mavenVersion>
     <cassandraVersion>2.0.3</cassandraVersion>
     <slf4jVersion>1.7.5</slf4jVersion>
+    <maven-clean-version>2.5</maven-clean-version>
+    <maven-compiler-version>2.3.2</maven-compiler-version>
   </properties>
 
   <dependencies>
@@ -242,12 +244,12 @@ under the License.
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-clean-plugin</artifactId>
-        <version>2.5</version>
+        <version>${maven-clean-version}</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>2.3.2</version>
+        <version>${maven-compiler-version}</version>
         <configuration>
           <source>1.6</source>
           <target>1.6</target>
